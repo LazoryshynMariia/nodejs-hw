@@ -53,7 +53,7 @@ app.use((req, res) => {
 app.use((err, req, res, next) => {
   console.error(err);
 
-  const isProd = process.env.NODE_ENV === "productioh";
+  const isProd = process.env.NODE_ENV === "production";
 
   res.status(500).json({
     message: isProd
@@ -63,5 +63,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Swerver running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
