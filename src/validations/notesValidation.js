@@ -1,5 +1,5 @@
 import { Joi, Segments } from "celebrate";
-import { tags } from "../constans/tags.js";
+import { tags } from "../constants/tags.js";
 import { isValidObjectId } from "mongoose";
 
 export const getAllNotesSchema = {
