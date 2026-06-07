@@ -7,7 +7,12 @@ import {
   getNoteById,
   updateNote
 } from "../controllers/notesController.js";
-import { createNoteSchema, getAllNotesSchema, noteIdSchema, updateNoteSchema } from "../validations/notesValidation.js";
+import {
+  createNoteSchema,
+  getAllNotesSchema,
+  noteIdSchema,
+  updateNoteSchema
+} from "../validations/notesValidation.js";
 
 
 
