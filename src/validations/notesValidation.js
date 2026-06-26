@@ -9,7 +9,7 @@ export const getAllNotesSchema = {
     tag: Joi.string().valid(...TAGS),
     search: Joi.string().allow(''),
   })
-}
+};
 
 const objectIdValidator = (value, helpers) => {
   return !isValidObjectId(value) ? helpers.message('Invalid id format') : value;
