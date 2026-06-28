@@ -8,6 +8,7 @@ import { notFoundHandler } from './middleware/notFoundHandler.js';
 import { errorHandler } from './middleware/errorHandler.js';
 import authRouter from './routes/authRoutes.js';
 import notesRoutes from './routes/notesRoutes.js';
+import userRoutes from './routes/userRoutes.js';
 import cookieParser from 'cookie-parser';
 
 const app = express();
@@ -20,6 +21,7 @@ app.use(cookieParser());
 
 app.use(authRouter);
 app.use(notesRoutes);
+app.use(userRoutes);
 
 
 app.use(notFoundHandler);
